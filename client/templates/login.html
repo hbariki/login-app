@@ -1,0 +1,25 @@
+<form action = "/" id="loginForm" name="LoginForm" class="container col-md-6 col-md-offset-3 form-horizontal" ng-controller="loginCtrl" novalidate>
+<div class = "page-header">
+    <h2>Login</h2>
+</div>
+<div class = "form-group">
+    <div class="col-md-2" class="form-label">User name</div>
+    <div class="col-md-6"><input type="text" class="form-control" id="username" ng-model="username" name="username"required></div>
+    <div class="col-md-4 field-validation-error" ng-show="loginForm.username.$error.required">is required</div>
+</div>
+<div class="form-group">
+    <div class = "col-md-2" class="form-label">Password</div>
+    <div class = "col-md-6"><input type="password" ng-minlength="5"name="password" class="form-control" id="password"ng-model="password" required></div>
+    <div class = "col-md-4 field-validation-error" ng-show="loginForm.password.$error.required">is required</div>
+    <div class = "col-md-4 field-validation-error" ng-show="loginForm.password.$error.minlength">must be 5 characters</div>
+</div>
+    <div class="form-group" ng-show="invalidInfo">
+        <div class="field-validation-error col-md-offset-3">Incorrect username or password</div>
+    </div>
+<div class="form-group">
+    <button type="button" class="col-md-offset-3 btn btn-primary"ng-click="submit(loginForm.$invalid)">Login </button>
+
+
+        </div>
+
+</form>

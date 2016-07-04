@@ -1,0 +1,18 @@
+{
+  "name": "newlogin",
+  "version": "1.0.0",
+  "description": "loginpage",
+  "main": "nodemonserver.js",
+  "scripts": {
+    "test": "nodemonserber.js",
+    "start": "node server.js"
+  },
+  "author": "harshini",
+  "license": "ISC",
+  "dependencies": {
+    "bower": "^1.7.9",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "handlebars": "^4.0.5"
+  }
+}
